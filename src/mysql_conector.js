@@ -28,9 +28,9 @@ let mysql = require("mysql");
 let usuario;
 let con = mysql.createConnection({
   host: "localhost",
-  user: "discos_owner",
-  password: "discos_password",
-  database: "discos_online",
+  user: "root",
+  password: "",
+  database: "cdm",
 });
 
 /*
@@ -45,7 +45,7 @@ const conectar = () =>
 */
 
 con.connect((err) => {
-    console.log("err", err);
+  console.log("err", err);
   if (!err) {
     console.log("BD conectada.");
   } else {
@@ -71,11 +71,15 @@ const agregarDeportista = (
 };
 
 const consultarUsuario = (opcion, correo) => {
-  const sql = `SELECT * FROM ${opcion} WHERE correo = '${correo}'`;
-  con.query(sql, (err, rows) => {
-    usuario = rows;
-  });
-  return usuario;
+    return new Promise((resolve, reject) => {
+        const sql = `SELECT * FROM ${opcion} WHERE correo = '${correo}'`;
+        con.query(sql, (err, result, filled) => {
+        if (err) {
+            reject(err);
+        }
+        resolve(result);
+        });
+    });
 };
 
 module.exports = { agregarDeportista, consultarUsuario };

@@ -76,13 +76,15 @@ app.get('/agregar/:nombre/:correo/:contrasena/:fecha/:peso/:altura/:sexo/:coach'
 
 });
 
-app.get('/iniciar/:correo/:contrasena/:opcion', (req,res) => 
+app.get('/iniciar/:correo/:contrasena/:opcion', async (req,res) => 
 {
     
     let correo = req.params.correo;
     let contrasena =req.params.contrasena;
     let opcion = req.params.opcion;
-    usuario = con.consultarUsuario(opcion, correo);
+    console.log(correo, contrasena, opcion);
+    usuario = await con.consultarUsuario(opcion, correo);
+    console.log(usuario);
     if(usuario.length < 1)
     {
         usuarioEncontrado = `No existe ningun ${opcion} con ese correo electrónico.`;
