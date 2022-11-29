@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo-salida.jpg">
+    <link rel="stylesheet" href="estilo_signIn.css">
+    <script src="../src/funciones_signIn.js" type="text/javascript"></script>
+    <title>CDM</title>
+</head>
+
+<body>
+    <script type="text/javascript"> 
+    let mensaje = '<%=alerta%>';
+    if(mensaje!="")
+    {
+        alert(mensaje);
+    }
+
+    </script>
+    <div id="form">
+        <div class="form">
+            <img src="CDM.png" id="imgCDM">
+            <div class="grupo">
+                <input type="text" id="nombre" required>
+                <label for="">Nombre</label>
+            </div>
+            <div class="grupo">
+                <input type="email" id="correo" required>
+                <label for="">Email</label>
+            </div>
+            <div class="grupo">
+                <input type="password" id="contrasena" required>
+                <label for="">Contraseña</label>
+            </div>
+            <div class="grupo">
+                <input type="date" id="fecha" required>
+                <label for="">Fecha de nacimiento</label>
+            </div>
+            <div class="grupo">
+                <input type="text" id="peso" required>
+                <label for="">Peso (kg)</label>
+            </div>
+            <div class="grupo">
+                <input type="text" id="altura" required>
+                <label for="">Altura (m)</label>
+            </div>
+            <div id="sexo">
+                <input type="radio"  name="sexo" id="hombre" value="H">H
+                <input type="radio"  name="sexo" id="mujer" value="M">M
+            </div>
+            <div class="grupo">
+                <button onclick="agregar();">Registrarse</button>
+            </div>
+
+        </div>
+        <br>
+        <center><a href="/login">¿Ya tienes cuenta? Inicia sesión aquí</a></center>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+body
+{
+    text-align: center;
+    background-color: white;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+details:hover
+{
+    cursor:pointer;
+}
+
+#header
+{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color:  rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 0px;
+    font-weight: bold;
+    transition:.5s;
+    z-index: 5;
+    margin: 0px auto;
+    padding-top: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#nav
+{
+    margin: 0px;
+    background-color:  rgb(255, 255, 255);
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items:center;
+}
+
+#logIn:hover, #SignIn:hover
+{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.inicio{
+    background-color:  rgb(0, 0, 0);
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    font-family:Bahnschrift;
+    color: rgb(255, 255, 255);
+}
+
+
+select
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 15px;
+}
+
+#imgCDM
+{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+.texto{
+    color: white;
+    font-family:Bahnschrift;
+    text-align: left;
+}
+.texto1{
+    color: white;
+    font-family:Bahnschrift;
+    text-align: right;
+}
+
+#registrate
+{
+    margin-top: 10px;
+    border-radius: 15px;
+    width: 90px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    font-family: Bahnschrift;
+}
+
+#registrate:hover
+{
+    cursor: pointer;
+}
+
+#fotoHero
+{
+    width: 750px;
+    height: auto;
+    margin: 0px;
+}
+
+#contactos
+{
+    height: 700px;
+    background-color:rgb(255, 255, 255);
+    transition: .4s;
+}
+
+.subtitulo
+{
+    padding-top: 20px;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    align-content: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 60px;
+    padding-left: 20px;
+}
+
+
+#martin, #ulises, #cristian, #diego, #reseña1, #reseña2
+{
+    margin-top: 50px;
+    display:inline-block;
+    width: 250px;
+    background-color:rgb(255, 255, 255);
+    margin-right: 45px;
+}
+
+#dmartin, #dulises, #dcristian, #ddiego
+{
+    font-family: Bahnschrift;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+
+}
+
+.calificacion
+{
+    color: white;
+    font-family: Bahnschrift;
+}
+
+#reseña1, #reseña2
+{
+    background-color:  rgb(0, 0, 0);
+    margin-top: 30px;
+    margin-right: 150px;
+}
+
+#reseña2
+{
+    margin-right: 0px;
+}
+
+#testimonios
+{
+    height: 650px;
+    background-color:  rgb(0, 0, 0);
+
+}
+
+#dfmartin, #dfulises, #dfcristian, #dfdiego, #dfreseña1, #dfreseña2
+{
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+#fmartin, #fulises, #fcristian, #fdiego, #freseña1, #freseña2
+{
+    width: 250px;
+
+}
+
+#fmartin:hover, #fulises:hover, #fcristian:hover, #fdiego:hover, #freseña1:hover, #freseña2:hover
+{
+    cursor: pointer;
+}
